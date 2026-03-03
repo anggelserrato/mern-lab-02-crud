@@ -4,6 +4,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import statusRoutes from './routes/statusRoutes.js';
+import taskRoutes from './routes/taskRoutes.js';
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(statusRoutes);
+app.use('/api/tasks', taskRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
