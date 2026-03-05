@@ -17,7 +17,8 @@
     "express": "^5.2.1",
     "helmet": "^8.1.0",
     "joi": "^18.0.2",
-    "morgan": "^1.10.1"
+    "morgan": "^1.10.1",
+    "newman": "^6.2.2"
   },
   "devDependencies": {
     "prettier": "3.8.1"
